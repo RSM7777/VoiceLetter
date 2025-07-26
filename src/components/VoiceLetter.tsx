@@ -72,11 +72,11 @@ export const VoiceLetter = (): JSX.Element => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const progressBarRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
-  // ✅ Use a ref to track interaction. This avoids re-renders.
+  
   const hasInteracted = useRef(false);
 
   /**
-   * ✅ FINAL STABLE SOLUTION
+   *  FINAL STABLE SOLUTION
    * This single effect handles everything: autoplay, scrolling, and unmuting on first interaction.
    */
   useEffect(() => {
@@ -254,12 +254,12 @@ export const VoiceLetter = (): JSX.Element => {
           </div>
         </CardHeader>
 
-        <CardContent className="flex flex-col gap-8 p-3 sm:p-10 bg-card">
+        <CardContent className="font-['Montserrat'] flex flex-col gap-8 p-3 sm:p-10 bg-card">
           <div className="space-y-2 md:space-y-4">
             {messageContent.map((item, index) => (
               <h1
                 key={index}
-                className={`font-sans text-xs md:text-xl leading-relaxed p-1 rounded-md transition-colors duration-300 text-card-foreground ${
+                className={`text-xs md:text-xl leading-relaxed p-1 rounded-md transition-colors duration-300 text-card-foreground ${
                   item.isBold ? "font-bold" : "font-medium"
                 } ${
                   index === highlightedIndex
