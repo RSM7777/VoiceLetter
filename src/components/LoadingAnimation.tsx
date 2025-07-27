@@ -174,11 +174,11 @@ const LoadingAnimation = ({ onComplete }: { onComplete: () => void }) => {
           />
         ))}
       </div>
-      <div className="absolute bottom-10 text-center w-full px-4">
+      {/* <div className="absolute bottom-10 text-center w-full px-4">
         <p className="text-sm sm:text-base" style={{ color: theme.secondary_grey }}>
           Crafting your elegant writing experience...
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
