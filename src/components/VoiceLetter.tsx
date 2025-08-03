@@ -13,7 +13,7 @@ const messageContent = [
     end: 4,
   },
   {
-    text: "You are, and always will be, the most important people in my life.",
+    text: "You are, and always will be, the most important person in my life.",
     isBold: false,
     start: 4,
     end: 8,
