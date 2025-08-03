@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 // The combined data structure with your text and audio timings
 const messageContent = [
-  { text: "Dear Mom and Dad,", isBold: true, start: 0, end: 1 },
+  { text: "Dear Dad,", isBold: true, start: 0, end: 1 },
   {
     text: "I don't say this nearly enough, but I wanted to write it down so you'd always know.",
     isBold: false,
